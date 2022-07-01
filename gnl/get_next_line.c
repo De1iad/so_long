@@ -6,7 +6,7 @@
 /*   By: obibby <obibby@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 17:02:51 by obibby            #+#    #+#             */
-/*   Updated: 2022/05/02 13:31:48 by obibby           ###   ########.fr       */
+/*   Updated: 2022/07/01 20:24:40 by obibby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ char	*find_n(char *data, int fd, char *jstr)
 
 char	*get_next_line(int fd)
 {
-	static char	*data[__FD_SETSIZE];
+	static char	*data[FD_SETSIZE];
 	char		*str;
 
 	str = 0;

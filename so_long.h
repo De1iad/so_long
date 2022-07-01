@@ -6,18 +6,18 @@
 /*   By: obibby <obibby@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 13:24:45 by obibby            #+#    #+#             */
-/*   Updated: 2022/04/26 13:39:25 by obibby           ###   ########.fr       */
+/*   Updated: 2022/07/01 22:47:17 by obibby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include "./minilibx-linux/mlx.h"
-# include "./minilibx-linux/mlx_int.h"
+# include "mlx.h"
 # include <stdlib.h>
+# include <fcntl.h>
 # include "./gnl/get_next_line.h"
-# include "./ftprintf/ft_printf.h"
+# include "./libft/libft.h"
 
 typedef struct s_entity {
 	char	id;

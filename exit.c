@@ -6,7 +6,7 @@
 /*   By: obibby <obibby@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 15:27:02 by obibby            #+#    #+#             */
-/*   Updated: 2022/07/01 21:58:01 by obibby           ###   ########.fr       */
+/*   Updated: 2022/07/04 13:41:20 by obibby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	restart_game(t_game *g)
 	assign_images(g, 34);
 	g->wscreen = create_img(g, colourshift(0, 255, 255, 255));
 	if (check_map(g) == 1)
-		ft_exit(g, 3);
+		ft_exit(g, 4);
 }
 
 void	free_eimages(t_game *g)

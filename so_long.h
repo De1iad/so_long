@@ -6,14 +6,14 @@
 /*   By: obibby <obibby@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 13:24:45 by obibby            #+#    #+#             */
-/*   Updated: 2022/07/01 22:47:17 by obibby           ###   ########.fr       */
+/*   Updated: 2022/07/04 13:05:01 by obibby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include "mlx.h"
+# include "./minilibx-linux/mlx.h"
 # include <stdlib.h>
 # include <fcntl.h>
 # include "./gnl/get_next_line.h"

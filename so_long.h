@@ -6,7 +6,7 @@
 /*   By: obibby <obibby@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 13:24:45 by obibby            #+#    #+#             */
-/*   Updated: 2022/07/04 13:05:01 by obibby           ###   ########.fr       */
+/*   Updated: 2022/08/01 19:40:01 by obibby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,7 @@ typedef enum e_keys {
 int				main(int argc, char **argv);
 int				input(int key, t_game *g);
 int				ft_exit(t_game *g, int code);
-void			render_frame(t_game *g);
+int				render_frame(t_game *g);
 void			assign_images(t_game *g, int s);
 char			**store_map(int fd, int lines);
 int				createmap(t_game *g, int argc, char **argv, int lines);

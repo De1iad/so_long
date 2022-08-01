@@ -6,7 +6,7 @@
 /*   By: obibby <obibby@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 09:23:38 by obibby            #+#    #+#             */
-/*   Updated: 2022/04/25 23:53:06 by obibby           ###   ########.fr       */
+/*   Updated: 2022/08/01 19:39:49 by obibby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ void	render_white(t_game *g, int x, int y)
 		render_enemy(g, x, y, 1);
 }
 
-void	render_frame(t_game *g)
+int	render_frame(t_game *g)
 {
 	int			x;
 	int			y;
@@ -110,4 +110,5 @@ void	render_frame(t_game *g)
 	moves = ft_itoa(g->movecount);
 	mlx_string_put(g->mlx, g->window, 5, 12, 0x00FF0000, moves);
 	free(moves);
+	return (0);
 }

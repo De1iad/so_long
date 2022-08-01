@@ -6,7 +6,7 @@
 /*   By: obibby <obibby@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 12:41:16 by obibby            #+#    #+#             */
-/*   Updated: 2022/04/26 13:38:10 by obibby           ###   ########.fr       */
+/*   Updated: 2022/08/01 19:48:22 by obibby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	error_write(char *c)
 {
-	ft_printf("Error: %s", c);
+	ft_printf("Error\n%s\n", c);
 	return (1);
 }
 
@@ -66,6 +66,7 @@ int	main(int argc, char **argv)
 
 	init_game(&g, argc, argv);
 	mlx_hook(g.window, 17, 0, ft_exit, &g);
+	mlx_expose_hook(g.window, render_frame, &g);
 	mlx_key_hook(g.window, input, &g);
 	render_frame(&g);
 	mlx_loop(g.mlx);
